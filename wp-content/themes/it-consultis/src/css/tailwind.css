@@ -1,3 +1,175 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --itc-light-gray: #f3f3f3;
+  --itc-secondary-black: #111;
+  --itc-third-black: #333;
+  --itc-dark-red: #870000;
+}
+
+/* Custom normalize */
+body {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  color: var(--itc-third-black);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/* Navigation */
+.main-navigation {
+  display: block;
+  width: 100%;
+}
+
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.main-navigation ul ul {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  top: 100%;
+  left: -999em;
+  z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+  left: -999em;
+  top: 0;
+}
+
+.main-navigation ul ul li:hover>ul,
+.main-navigation ul ul li.focus>ul {
+  display: block;
+  left: auto;
+}
+
+.main-navigation ul ul a {
+  width: 200px;
+}
+
+.main-navigation ul li:hover>ul,
+.main-navigation ul li.focus>ul {
+  left: auto;
+}
+
+.main-navigation li {
+  position: relative;
+  padding: 20px 15px;
+  border-bottom: 1px solid #710000;
+}
+
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+/* Desktop menu. */
+#desktop-primary-menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-navigation ul {
+    display: flex;
+  }
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+  margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+  display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  text-align: end;
+  flex: 1 0 50%;
+}
+
+/* Owl item */
+.owl-carousel .owl-item {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* Owl nav prev next */
+.owl-nav {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  width: 30px;
+  height: 30px;
+  padding: 30px !important;
+  border-radius: 50%;
+  border: 1px solid var(--itc-third-black) !important;
+  position: relative;
+}
+
+.owl-carousel .owl-nav button span {
+  font-size: 24px;
+  line-height: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
