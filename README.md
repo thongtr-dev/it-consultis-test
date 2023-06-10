@@ -36,3 +36,13 @@ To test the About Us page, follow these steps:
 * Run `npm install` to install dev dependencies.
 * Run `npm run css:dev` to start tracking CSS changes with Tailwind classes, at the same time, run `npm run start` for compiling.
 * For bundling production files, run `npm run css:build && npm run build`.
+
+## Demo:
+Here is how the page should look like in mobile devices:
+
+![image](https://github.com/thongtr-dev/it-consultis-test/assets/105508303/3b758461-cdb6-46d8-8ec7-56d35128e91d)
+
+And here is the desktop version:
+
+![image](https://github.com/thongtr-dev/it-consultis-test/assets/105508303/e27d9028-00e9-4202-96e4-3aabdc7bf06c)
+
