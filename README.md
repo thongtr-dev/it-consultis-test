@@ -40,7 +40,7 @@ To test the About Us page, follow these steps:
 ## Demo:
 Here is how the page should look like in mobile devices:
 
-![image](https://github.com/thongtr-dev/it-consultis-test/assets/105508303/3b758461-cdb6-46d8-8ec7-56d35128e91d)
+![image](https://github.com/thongtr-dev/it-consultis-test/assets/105508303/a2780672-a78f-46f2-b551-ab2109e8a89a)
 
 And here is the desktop version:
 
