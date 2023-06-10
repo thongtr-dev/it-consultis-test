@@ -49,7 +49,7 @@ get_header();
                         <p>ITC offers a wide range of strategy consulting and technology development services for various industries worldwide. Ultimately, we help our clients develop the best strategies and playbook set-up along with the right digital enablers to achieve their objectives in China, Asia, and other markets.</p>
                         <p class="mt-5">Find your next success path with our combined strategic and technology expertise.</p>
                     </div>
-                    <div class="about-us_pillars__list grid grid-cols-2 gap-[15px] mt-12 sm:grid-cols-3 lg:grid-cols-4">
+                    <div class="about-us_pillars__list grid grid-cols-1 gap-[15px] mt-12 sm:grid-cols-2 lg:grid-cols-4">
                         <div class="about-us_pillar flex flex-col bg-itc-light-gray rounded-[20px] py-9 px-5">
                             <div class="about-us_pillar__logo">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 705 630" width="705" height="630" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px); content-visibility: visible;">
